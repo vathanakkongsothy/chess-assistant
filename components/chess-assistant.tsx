@@ -10,9 +10,9 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 
 export function ChessAssistant() {
   const [activeTab, setActiveTab] = useState("board")
-  const [theme, setTheme] = useState("cosmic")
+  const [theme, setTheme] = useState<"cosmic" | "forest" | "sunset">("cosmic")
 
-  const themeStyles = {
+  const themeStyles: { [key in "cosmic" | "forest" | "sunset"]: string } = {
     cosmic: "from-purple-900 via-indigo-800 to-blue-900",
     forest: "from-green-900 via-emerald-800 to-teal-900",
     sunset: "from-red-900 via-orange-800 to-yellow-900",
