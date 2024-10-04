@@ -10,7 +10,6 @@ pool:
   vmImage: ubuntu-digitalosean
 
 steps:
-
 - script: |
     npm install
     npm run build
