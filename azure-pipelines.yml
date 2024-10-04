@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: ubuntu-digitalosean
+  name: ubuntu
 
 steps:
 - script: |
