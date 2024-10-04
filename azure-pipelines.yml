@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-digitalosean
+  name: ubuntu-digitalosean
 
 steps:
 - script: |
